@@ -1,0 +1,407 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  scroll-padding-top: 50px;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #333;
+  color: #fff;
+}
+
+.theme-color {
+  color: rgb(209, 153, 0);
+}
+
+.main-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 4rem;
+  padding: 10rem 0;
+}
+
+.hero-img {
+  position: relative;
+  height: 300px;
+  background-image: url("../img/hero/technical_drawing_small.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.hero-shadow {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -5;
+}
+
+.hero-text {
+  font-size: 1.6rem;
+}
+.hero-text .hero-title {
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-shadow: 3px 3px 3px black;
+}
+
+.navbar {
+  z-index: 5;
+  padding: 0;
+}
+.navbar .navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 1.5rem;
+}
+.navbar .navbar-toggler {
+  height: 5rem;
+}
+.navbar .navbar-toggler .fa-bars {
+  font-size: 2.3rem;
+  padding: 0 1.2rem;
+  color: #fff;
+}
+.navbar .navbar-nav .nav-link,
+.navbar .navbar-nav .nav-link.show {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  padding: 0.7rem 1.5rem;
+  color: #fff;
+}
+.navbar .navbar-nav .nav-link:hover {
+  background-color: #1c1f22;
+}
+.navbar .navbar-nav .active {
+  color: rgb(209, 153, 0);
+}
+
+.aboutus {
+  position: relative;
+  background-color: #80d3ff;
+  z-index: 0;
+}
+
+.aboutus-shadow {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -5;
+}
+
+.aboutus-img {
+  height: 250px;
+  width: 250px;
+  border: 0.5rem solid #fff;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.aboutus-text {
+  font-size: 2rem;
+  z-index: 5;
+}
+
+.aboutus-subtext {
+  text-align: center;
+  padding: 10rem 2rem 2rem;
+  font-size: 1.6rem;
+}
+
+.aboutus-button,
+.contact-button {
+  background-color: rgb(209, 153, 0);
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 2rem 5rem;
+  margin: 10rem 0;
+}
+
+.aboutus-button:hover,
+.contact-button:hover {
+  background-color: rgb(136, 100, 1);
+}
+
+.aboutus-button-desc {
+  margin-bottom: 0;
+}
+
+.carousel-text {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2rem 2rem;
+}
+.carousel-text .carousel-title {
+  color: rgb(209, 153, 0);
+  font-size: 2rem;
+}
+.carousel-text .carousel-subtitle {
+  font-size: 1.4rem;
+}
+
+.carousel-img {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-img-one {
+  background-image: url("../img/about/carousel/room_small.jpg");
+}
+
+.carousel-img-two {
+  background-image: url("../img/about/carousel/outside_small.jpg");
+}
+
+.carousel-img-three {
+  background-image: url("../img/about/carousel/technology_small.jpg");
+}
+
+.prices {
+  position: relative;
+  padding-bottom: 200px;
+  background-image: url("../img/prices/pattern.jpg");
+  z-index: 0;
+}
+.prices .price-popular {
+  margin: 8rem 0;
+}
+.prices .card {
+  border-radius: 2rem;
+  box-shadow: 0 0 4rem rgba(0, 0, 0, 0.7);
+  transition: scale 0.3s;
+}
+.prices .card .card-body {
+  padding: 6rem 3rem;
+}
+.prices .card .card-body .card-title {
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.prices .card .card-body .card-text {
+  font-size: 1.6rem;
+}
+.prices .card .card-body i {
+  padding: 2rem 0;
+  font-size: 4rem;
+}
+.prices .card .card-body .btn {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+.prices .card:hover {
+  scale: 1.05;
+}
+
+.prices-light {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: -5;
+}
+
+.contact {
+  position: relative;
+  padding-bottom: 200px;
+  background-color: rgb(209, 153, 0);
+  z-index: 0;
+}
+.contact .address {
+  padding-bottom: 5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.contact p,
+.contact form,
+.contact .form-control,
+.contact .form-select,
+.contact .form-floating {
+  font-size: 1.6rem;
+}
+.contact .form-floating .form-control {
+  padding: 7.5px;
+  height: 200px;
+}
+.contact i {
+  padding-right: 0.5rem;
+}
+.contact .contact-form,
+.contact .contact-address {
+  padding: 5rem;
+}
+.contact .contact-button {
+  font-size: 1.6rem;
+  padding: 1rem 3rem;
+  margin: 2rem 0 0;
+}
+
+.footer-text {
+  padding: 2rem 0;
+  font-size: 1.6rem;
+}
+
+@media (min-width: 320px) {
+  .contact .contact-form {
+    padding: 5rem 2rem;
+  }
+}
+@media (min-width: 375px) {
+  .prices .price-popular {
+    scale: 1.1;
+  }
+}
+@media (min-width: 576px) {
+  .hero-img {
+    height: 400px;
+    background-image: url("../img/hero/technical_drawing_medium.jpg");
+  }
+  .hero-text {
+    font-size: 1.8rem;
+  }
+  .hero-text .hero-title {
+    font-size: 7.7rem;
+  }
+  .aboutus {
+    background-image: url("../img/about/architecture_medium.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .aboutus-img {
+    height: 300px;
+    width: 300px;
+  }
+  .aboutus-description {
+    height: 200px;
+  }
+  .aboutus-text {
+    padding-top: 5rem;
+  }
+  .aboutus-subtext {
+    text-align: left;
+    padding: 0 5rem 0 0;
+  }
+  .aboutus-button {
+    margin: 0;
+  }
+  .carousel-item {
+    margin-bottom: 5rem;
+  }
+  .contact {
+    background-color: transparent;
+    background-image: url("../img/contact/architektura_medium.jpg");
+    background-size: cover;
+  }
+  .contact .contact-shadow {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(209, 153, 0, 0.8);
+    z-index: -5;
+  }
+}
+@media (min-width: 768px) {
+  .aboutus-text {
+    padding: 5rem 5rem 0;
+  }
+  .aboutus-description {
+    padding: 0 5rem;
+  }
+  .carousel-img {
+    height: 500px;
+  }
+  .carousel-text {
+    padding: 3rem 2rem;
+  }
+  .carousel-text .carousel-title {
+    font-size: 3rem;
+  }
+  .carousel-text .carousel-subtitle {
+    font-size: 1.5rem;
+  }
+  .carousel-img-one {
+    background-image: url("../img/about/carousel/room_medium.jpg");
+  }
+  .carousel-img-two {
+    background-image: url("../img/about/carousel/outside_medium.jpg");
+  }
+  .carousel-img-three {
+    background-image: url("../img/about/carousel/technology_medium.jpg");
+  }
+  .prices .price-popular {
+    margin: 0 0 8rem;
+  }
+  .contact .contact-form {
+    padding: 5rem;
+  }
+}
+@media (min-width: 992px) {
+  .hero-img {
+    height: 500px;
+    background-image: url("../img/hero/technical_drawing_big.jpg");
+  }
+  .hero-text {
+    font-size: 2rem;
+  }
+  .hero-text .hero-title {
+    font-size: 8rem;
+  }
+  .navbar {
+    height: 5rem;
+  }
+  .navbar .navbar-nav .nav-link {
+    line-height: 5rem;
+    padding: 0 5rem;
+  }
+  .navbar .navbar-nav .nav-link:hover {
+    background-color: #1c1f22;
+  }
+  .aboutus {
+    background-image: url("../img/about/architecture_big.jpg");
+  }
+  .aboutus-text {
+    padding: 0 5rem;
+  }
+  .carousel-img {
+    height: 600px;
+  }
+  .carousel-img-one {
+    background-image: url("../img/about/carousel/room_big.jpg");
+  }
+  .carousel-img-two {
+    background-image: url("../img/about/carousel/outside_big.jpg");
+  }
+  .carousel-img-three {
+    background-image: url("../img/about/carousel/technology_big.jpg");
+  }
+  .contact {
+    background-image: url("../img/contact/architektura_big.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  .prices .price-popular {
+    margin: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
